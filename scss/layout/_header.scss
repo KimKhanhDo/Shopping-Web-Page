@@ -1,3 +1,5 @@
+@use "../abstracts/" as abstracts;
+
 // Place holders area
 %flexItemsCenter {
   display: flex;
@@ -6,6 +8,10 @@
 
 .header {
   background: var(--header-bg-color);
+
+  @include abstracts.breakpoint(lg) {
+    width: 100px;
+  }
 }
 
 .top-bar {
