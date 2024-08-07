@@ -30,16 +30,18 @@ button {
     cursor: pointer;
 }
 
-// reset default settings to inherit
+// reset default settings, font & color are inherited
 a,
 img,
 button,
 input,
 textarea,
 select {
+    padding: 0;
     font-family: inherit;
     color: inherit;
     outline: none;
+    border: none;
     -webkit-tap-highlight-color: transparent;
 }
 
