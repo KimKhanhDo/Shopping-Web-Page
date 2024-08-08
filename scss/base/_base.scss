@@ -45,6 +45,11 @@ select {
     -webkit-tap-highlight-color: transparent;
 }
 
+//  default background of input is white
+input {
+    background: transparent;
+}
+
 .icon {
     filter: var(--icon-color);
 }
