@@ -1,6 +1,11 @@
 .product-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
     padding: 16px;
     border-radius: 20px;
+
     background: var(--product-card-bg);
     box-shadow: 0px 20px 60px 10px var(--product-card-shadow);
 
@@ -24,6 +29,10 @@
         bottom: 0;
     }
 
+    &__title {
+        margin-top: 16px;
+    }
+
     &__title,
     &__price,
     &__score {
@@ -32,20 +41,17 @@
         line-height: 150%;
     }
 
-    &__title {
-        margin-top: 16px;
-    }
-
     &__brand {
         margin: 16px 0;
+        color: #9e9da8;
         font-size: 1.5rem;
         line-height: 146.667%;
-        color: #9e9da8;
     }
 
     &__row {
         display: flex;
         align-items: center;
+        margin-top: auto;
     }
 
     &__star {
