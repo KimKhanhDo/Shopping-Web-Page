@@ -35,6 +35,7 @@ a,
 img,
 button,
 input,
+label,
 textarea,
 select {
     padding: 0;
@@ -42,7 +43,7 @@ select {
     color: inherit;
     outline: none;
     border: none;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; // remove highlight flash
 }
 
 //  default background of input is white
