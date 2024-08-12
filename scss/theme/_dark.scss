@@ -50,6 +50,15 @@ html.dark {
     --filter-form-tag-bg: #171c28;
     --filter-form-arrow: brightness(0) saturate(100%) invert(17%) sepia(9%) saturate(1385%) hue-rotate(186deg)
         brightness(98%) contrast(89%);
+
+    // Auth
+    --auth-content-bg: #292e39;
+    --auth-intro-bg: #171c28;
+    --auth-intro-text-color: #b9babe;
+    --auth-heading-color: #b9babe;
+
+    // Form
+    --form-placeholder-color: #b9babe;
 }
 
 // use filter to change icon's color
