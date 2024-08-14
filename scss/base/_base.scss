@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent; // remove highlight flash when click on title
+}
+
 html {
     font-size: 62.5%;
 }
@@ -43,7 +47,6 @@ select {
     color: inherit;
     outline: none;
     border: none;
-    -webkit-tap-highlight-color: transparent; // remove highlight flash
 }
 
 //  default background of input is white
