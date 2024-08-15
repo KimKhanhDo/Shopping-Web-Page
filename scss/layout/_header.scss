@@ -230,8 +230,15 @@
         padding: 13px;
     }
 
-    &__btn {
+    &__btn-wrap {
         position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
+    &__btn {
         @extend %flexItemsCenter;
         column-gap: 10px;
         padding: 13px 20px;
@@ -285,15 +292,26 @@
 // Dropdown shopping cart
 .act-dropdown {
     position: absolute;
-    top: 60px;
+    top: 48px;
     right: -70px;
     width: min(500px, 100vw);
+    padding-top: 27px;
+    display: none;
 
     &__inner {
+        position: relative;
         padding: 30px;
         border-radius: 20px;
         background: var(--header-act-dropdown-bg);
         box-shadow: 0px 40px 90px 20px var(--header-act-dropdown-shadow);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -15px;
+        right: 100px;
+        height: 15px;
+        filter: var(--dropdown-arrow-color);
     }
 
     &__top {
@@ -325,7 +343,7 @@
         margin: 20px 0;
         padding: 20px 0;
         border-width: 1px 0;
-        border-color: #d2d1d6;
+        border-color: var(--header-act-dropdown-border-color);
         border-style: solid;
     }
 
@@ -365,7 +383,7 @@
     &__img-wrap {
         position: relative;
         padding-top: 100%;
-        border: 1.5px solid #ebebeb;
+        border: 1.5px solid var(--header-act-dropdown-border-color);
         border-radius: 10px;
     }
 
