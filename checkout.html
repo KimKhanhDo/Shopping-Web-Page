@@ -112,7 +112,10 @@
                                                         <img src="./assets/icons/heart-2.svg" alt="" />
                                                         Save
                                                     </button>
-                                                    <button class="cart-item__ctrl-btn">
+                                                    <button
+                                                        class="cart-item__ctrl-btn js-toggle"
+                                                        toggle-target="#delete-confirmation"
+                                                    >
                                                         <img src="./assets/icons/bin.svg" alt="" />
                                                         Delete
                                                     </button>
@@ -167,7 +170,10 @@
                                                         <img src="./assets/icons/heart-2.svg" alt="" />
                                                         Save
                                                     </button>
-                                                    <button class="cart-item__ctrl-btn">
+                                                    <button
+                                                        class="cart-item__ctrl-btn js-toggle"
+                                                        toggle-target="#delete-confirmation"
+                                                    >
                                                         <img src="./assets/icons/bin.svg" alt="" />
                                                         Delete
                                                     </button>
@@ -222,7 +228,10 @@
                                                         <img src="./assets/icons/heart-2.svg" alt="" />
                                                         Save
                                                     </button>
-                                                    <button class="cart-item__ctrl-btn">
+                                                    <button
+                                                        class="cart-item__ctrl-btn js-toggle"
+                                                        toggle-target="#delete-confirmation"
+                                                    >
                                                         <img src="./assets/icons/bin.svg" alt="" />
                                                         Delete
                                                     </button>
@@ -325,5 +334,25 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
+
+        <!-- Dialog / Model -->
+        <div id="delete-confirmation" class="dialog hide">
+            <div class="dialog__content">
+                <div class="dialog__text">Are you sure you want to delete?</div>
+                <div class="dialog__bottom">
+                    <button class="btn btn--small btn--text dialog__btn js-toggle" toggle-target="#delete-confirmation">
+                        Cancel
+                    </button>
+                    <button
+                        class="btn btn--small btn--primary dialog__btn btn--no-margin js-toggle"
+                        toggle-target="#delete-confirmation"
+                    >
+                        Confirm
+                    </button>
+                </div>
+            </div>
+
+            <div class="dialog__overlay js-toggle" toggle-target="#delete-confirmation"></div>
+        </div>
     </body>
 </html>
