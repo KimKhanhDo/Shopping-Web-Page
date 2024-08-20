@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -534,8 +534,38 @@
                         <div class="form__group">
                             <label for="city" class="form__label form__label--small">City/State</label>
                             <div class="form__text-input form__text-input--small">
-                                <input type="tel" name="" id="city" placeholder="City/State" class="form__input" />
+                                <input
+                                    type="text"
+                                    name=""
+                                    id="city"
+                                    placeholder="City/State"
+                                    class="form__input js-toggle"
+                                    toggle-target="#city-dialog"
+                                />
                                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+
+                                <!-- Search location -->
+                                <div id="city-dialog" class="form__select-dialog hide">
+                                    <div class="form__search">
+                                        <input type="text" placeholder="Search" class="form__search-input" />
+                                        <img src="./assets/icons/search.svg" alt="" class="icon form__search-icon" />
+                                    </div>
+                                    <ul class="form__option-list">
+                                        <li class="form__option form__option--active">Melbourne</li>
+                                        <li class="form__option">Sydney</li>
+                                        <li class="form__option">Perth</li>
+                                        <li class="form__option">Adelaide</li>
+                                        <li class="form__option">Canberra</li>
+                                        <li class="form__option">Darwin</li>
+                                        <li class="form__option">Tasmania</li>
+                                        <li class="form__option">Sydney</li>
+                                        <li class="form__option">Perth</li>
+                                        <li class="form__option">Adelaide</li>
+                                        <li class="form__option">Canberra</li>
+                                        <li class="form__option">Darwin</li>
+                                        <li class="form__option">Tasmania</li>
+                                    </ul>
+                                </div>
                             </div>
                             <p class="form__error">Couldn't find city/state</p>
                         </div>
