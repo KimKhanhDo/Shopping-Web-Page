@@ -50,8 +50,16 @@ select {
 }
 
 //  default background of input is white
-input {
+input,
+textarea {
     background: transparent;
+}
+
+input:-webkit-auto-fill,
+input:-webkit-auto-fill:focus,
+input:-webkit-auto-fill:active,
+input:-webkit-auto-fill:hover {
+    transition: background-color 1s 9999s;
 }
 
 .icon {
