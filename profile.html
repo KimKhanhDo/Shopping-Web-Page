@@ -103,7 +103,7 @@
                                                 <span class="profile-menu__icon">
                                                     <img src="./assets/icons/heart.svg" alt="" class="icon" />
                                                 </span>
-                                                Favourite
+                                                Favourite List
                                             </a>
                                         </li>
                                         <li>
@@ -167,65 +167,166 @@
                         <!-- User content info -->
                         <div class="col-9">
                             <div class="cart-info">
-                                <h2 class="cart-info__heading">My Wallet</h2>
-                                <p class="cart-info__desc profile__desc">Payment methods</p>
+                                <div class="row gy-3">
+                                    <!-- Wallet -->
+                                    <div class="col-12">
+                                        <h2 class="cart-info__heading">My Wallet</h2>
+                                        <p class="cart-info__desc profile__desc">Payment methods</p>
 
-                                <!-- Payment cards -->
-                                <div class="row">
-                                    <!-- Card 1 -->
-                                    <div class="col-4">
-                                        <article class="payment-card" style="--bg-color: #1e2e69">
+                                        <!-- Payment cards -->
+                                        <div class="row">
+                                            <!-- Card 1 -->
+                                            <div class="col-4">
+                                                <article class="payment-card" style="--bg-color: #1e2e69">
+                                                    <img
+                                                        src="./assets/img/card/plane-bg.svg"
+                                                        alt=""
+                                                        class="payment-card__img"
+                                                    />
+                                                    <div class="payment-card__top">
+                                                        <img src="./assets/img/card/plane.svg" alt="" />
+                                                        <span class="payment-card__type">ING</span>
+                                                    </div>
+                                                    <div class="payment-card__number">1234 4567 8901 2221</div>
+                                                    <div class="payment-card__bottom">
+                                                        <div>
+                                                            <p class="payment-card__label">Card Holder</p>
+                                                            <p class="payment-card__value">Jacqui Le</p>
+                                                        </div>
+                                                        <div class="payment-card__expired">
+                                                            <p class="payment-card__label">Expired</p>
+                                                            <p class="payment-card__value">10/28</p>
+                                                        </div>
+                                                        <div class="payment-card__circle"></div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <!-- Card 2 -->
+                                            <div class="col-4">
+                                                <article class="payment-card" style="--bg-color: #354151">
+                                                    <img
+                                                        src="./assets/img/card/leaf-bg.svg"
+                                                        alt=""
+                                                        class="payment-card__img"
+                                                    />
+                                                    <div class="payment-card__top">
+                                                        <img src="./assets/img/card/leaf.svg" alt="" />
+                                                        <span class="payment-card__type">Commonwealth</span>
+                                                    </div>
+                                                    <div class="payment-card__number">1234 4567 8901 2221</div>
+                                                    <div class="payment-card__bottom">
+                                                        <div>
+                                                            <p class="payment-card__label">Card Holder</p>
+                                                            <p class="payment-card__value">Jacqui Le</p>
+                                                        </div>
+                                                        <div class="payment-card__expired">
+                                                            <p class="payment-card__label">Expired</p>
+                                                            <p class="payment-card__value">11/25</p>
+                                                        </div>
+                                                        <div class="payment-card__circle"></div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <!-- Add new card -->
+                                            <div class="col-4">
+                                                <a href="#!" class="new-card">
+                                                    <img src="./assets/icons/plus.svg" alt="" class="new-card__icon" />
+                                                    <p class="new-card__text">Add New Card</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Account info -->
+                                    <div class="col-12">
+                                        <h2 class="cart-info__heading">Account Info</h2>
+                                        <p class="cart-info__desc profile__desc">
+                                            Addresses, contact information and password
+                                        </p>
+                                        <div class="row">
+                                            <!-- Info card 1 -->
+                                            <div class="col-6">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/mail.svg" alt="" class="icon" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Email Address</h3>
+                                                        <p class="account-info__desc">jacqui1202@gmail.com</p>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            <!-- Info card 2 -->
+                                            <div class="col-6">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/phone.svg" alt="" class="icon" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Phone Number</h3>
+                                                        <p class="account-info__desc">+000 11122 2345 657</p>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            <!-- Info card 1 -->
+                                            <div class="col-6">
+                                                <article class="account-info">
+                                                    <div class="account-info__icon">
+                                                        <img src="./assets/icons/address.svg" alt="" class="icon" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 class="account-info__title">Address</h3>
+                                                        <p class="account-info__desc">Melbourne, Victoria, Australia</p>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- List -->
+                                    <div class="col-12">
+                                        <h2 class="cart-info__heading">Favourite List</h2>
+                                        <p class="cart-info__desc profile__desc">2 items - Primary</p>
+
+                                        <!-- Favourite item 1 -->
+                                        <article class="favourite-item">
                                             <img
-                                                src="./assets/img/card/plane-bg.svg"
+                                                src="./assets/img/product/item-7.png"
                                                 alt=""
-                                                class="payment-card__img"
+                                                class="favourite-item__thumb"
                                             />
-                                            <div class="payment-card__top">
-                                                <img src="./assets/img/card/plane.svg" alt="" />
-                                                <span class="payment-card__type">ING</span>
-                                            </div>
-                                            <div class="payment-card__number">1234 4567 8901 2221</div>
-                                            <div class="payment-card__bottom">
-                                                <div>
-                                                    <p class="payment-card__label">Card Holder</p>
-                                                    <p class="payment-card__value">Jacqui Le</p>
+                                            <div>
+                                                <h3 class="favourite-item__title">
+                                                    Coffee Beans - Espresso Arabica and Robusta Beans
+                                                </h3>
+                                                <div class="favourite-item__content">
+                                                    <span class="favourite-item__price">$47.00</span>
+                                                    <button class="btn btn--primary btn--rounded">Add to cart</button>
                                                 </div>
-                                                <div class="payment-card__expired">
-                                                    <p class="payment-card__label">Expired</p>
-                                                    <p class="payment-card__value">10/28</p>
-                                                </div>
-                                                <div class="payment-card__circle"></div>
                                             </div>
                                         </article>
-                                    </div>
-                                    <!-- Card 2 -->
-                                    <div class="col-4">
-                                        <article class="payment-card" style="--bg-color: #354151">
-                                            <img src="./assets/img/card/leaf-bg.svg" alt="" class="payment-card__img" />
-                                            <div class="payment-card__top">
-                                                <img src="./assets/img/card/leaf.svg" alt="" />
-                                                <span class="payment-card__type">Commonwealth</span>
-                                            </div>
-                                            <div class="payment-card__number">1234 4567 8901 2221</div>
-                                            <div class="payment-card__bottom">
-                                                <div>
-                                                    <p class="payment-card__label">Card Holder</p>
-                                                    <p class="payment-card__value">Jacqui Le</p>
+
+                                        <div class="separate" style="--margin: 20px"></div>
+
+                                        <!-- Favourite item 2 -->
+                                        <article class="favourite-item">
+                                            <img
+                                                src="./assets/img/product/item-12.png"
+                                                alt=""
+                                                class="favourite-item__thumb"
+                                            />
+                                            <div>
+                                                <h3 class="favourite-item__title">
+                                                    Lavazza Coffee Blends - Try the Italian Espresso
+                                                </h3>
+                                                <div class="favourite-item__content">
+                                                    <span class="favourite-item__price">$53.00</span>
+                                                    <button class="btn btn--primary btn--rounded">Add to cart</button>
                                                 </div>
-                                                <div class="payment-card__expired">
-                                                    <p class="payment-card__label">Expired</p>
-                                                    <p class="payment-card__value">11/25</p>
-                                                </div>
-                                                <div class="payment-card__circle"></div>
                                             </div>
                                         </article>
-                                    </div>
-                                    <!-- Add new card -->
-                                    <div class="col-4">
-                                        <a href="#!" class="new-card">
-                                            <img src="./assets/icons/plus.svg" alt="" class="new-card__icon" />
-                                            <p class="new-card__text">Add New Card</p>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
