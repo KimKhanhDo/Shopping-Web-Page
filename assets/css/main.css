@@ -4561,6 +4561,7 @@ html {
 .form-card__bottom {
   display: flex;
   justify-content: flex-end;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
